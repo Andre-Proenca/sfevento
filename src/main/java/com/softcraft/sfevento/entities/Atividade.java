@@ -76,4 +76,17 @@ public class Atividade {
     public Set<Participante> getParticipantes() {
         return participantes;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Atividade atividade)) return false;
+
+        return getId() != null ? getId().equals(atividade.getId()) : atividade.getId() == null;
+    }
+
+    @Override
+    public int hashCode() {
+        return getId() != null ? getId().hashCode() : 0;
+    }
 }

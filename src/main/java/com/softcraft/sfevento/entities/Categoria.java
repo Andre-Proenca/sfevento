@@ -41,4 +41,17 @@ public class Categoria {
     public List<Atividade> getAtividades() {
         return atividades;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Categoria categoria)) return false;
+
+        return getId() != null ? getId().equals(categoria.getId()) : categoria.getId() == null;
+    }
+
+    @Override
+    public int hashCode() {
+        return getId() != null ? getId().hashCode() : 0;
+    }
 }

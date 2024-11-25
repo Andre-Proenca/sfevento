@@ -49,4 +49,17 @@ public class Bloco {
     public void setFim(Instant fim) {
         this.fim = fim;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Bloco bloco)) return false;
+
+        return getId() != null ? getId().equals(bloco.getId()) : bloco.getId() == null;
+    }
+
+    @Override
+    public int hashCode() {
+        return getId() != null ? getId().hashCode() : 0;
+    }
 }
