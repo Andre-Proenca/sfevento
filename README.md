@@ -37,3 +37,10 @@ O sistema gerencia as informações de um evento acadêmico, composto por divers
 - **Maven** (gerenciador de dependências)
 
 ---
+## Diagrama de objetos
+![CLASSDIAGRAM](diagramadeclassesfsevento.png)
+
+---
+
+## Autor
+Desenvolvido por **Andre Proenca** como parte do estudo do framework **Spring Boot** e práticas de desenvolvimento backend.
